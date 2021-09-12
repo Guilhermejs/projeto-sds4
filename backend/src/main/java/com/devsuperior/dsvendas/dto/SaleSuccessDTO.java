@@ -8,7 +8,7 @@ public class SaleSuccessDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
-	private String name;
+	private String sellerName;
 	private Long visited;
 	private Long deals;
 	
@@ -16,17 +16,17 @@ public class SaleSuccessDTO implements Serializable {
 	}
 
 	public SaleSuccessDTO(Seller seller, Long visited, Long deals) {
-		name = seller.getName();
+		sellerName = seller.getName();
 		this.visited = visited;
 		this.deals = deals;
 	}
 
 	public String getName() {
-		return name;
+		return sellerName;
 	}
 
 	public void setName(String name) {
-		this.name = name;
+		this.sellerName = name;
 	}
 
 	public Long getVisited() {
